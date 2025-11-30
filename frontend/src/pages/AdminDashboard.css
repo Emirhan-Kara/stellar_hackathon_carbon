@@ -1,0 +1,339 @@
+.admin-dashboard-page {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 1rem;
+  padding-top: calc(60px + 2rem); /* Account for fixed header (60px) + padding */
+  margin-top: 0;
+}
+
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-dashboard-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.page-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.success-message {
+  background-color: var(--success-bg, #efe);
+  color: var(--success-text, #3c3);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid var(--success-border, #4caf50);
+}
+
+.error-message {
+  background-color: var(--error-bg, #fee);
+  color: var(--error-text, #c33);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.no-requests {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-secondary);
+}
+
+.no-requests i {
+  font-size: 4rem;
+  color: var(--success-color, #4caf50);
+  margin-bottom: 1rem;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.request-card {
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color, #eee);
+}
+
+.request-header h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.request-status {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.request-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.request-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.detail-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 120px;
+}
+
+.detail-value {
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.document-link {
+  color: var(--primary-color, #007bff);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s;
+}
+
+.document-link:hover {
+  color: var(--primary-hover, #0056b3);
+  text-decoration: underline;
+}
+
+.request-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color, #eee);
+}
+
+.btn-approve,
+.btn-reject {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.btn-approve {
+  background-color: var(--success-color, #4caf50);
+  color: white;
+}
+
+.btn-approve:hover:not(:disabled) {
+  background-color: var(--success-hover, #45a049);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.btn-reject {
+  background-color: var(--error-color, #f44336);
+  color: white;
+}
+
+.btn-reject:hover:not(:disabled) {
+  background-color: var(--error-hover, #da190b);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+}
+
+.btn-approve:disabled,
+.btn-reject:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.modal-content {
+  background: var(--card-bg, #fff);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.modal-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.modal-details {
+  background: var(--bg-secondary, #f5f5f5);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.modal-details p {
+  margin: 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  background: var(--input-bg, #fff);
+  color: var(--text-primary);
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color, #007bff);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.btn-cancel,
+.btn-confirm-approve,
+.btn-confirm-reject {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel {
+  background-color: var(--bg-secondary, #f5f5f5);
+  color: var(--text-primary);
+}
+
+.btn-cancel:hover {
+  background-color: var(--border-color, #ddd);
+}
+
+.btn-confirm-approve {
+  background-color: var(--success-color, #4caf50);
+  color: white;
+}
+
+.btn-confirm-approve:hover:not(:disabled) {
+  background-color: var(--success-hover, #45a049);
+}
+
+.btn-confirm-reject {
+  background-color: var(--error-color, #f44336);
+  color: white;
+}
+
+.btn-confirm-reject:hover:not(:disabled) {
+  background-color: var(--error-hover, #da190b);
+}
+
+.btn-confirm-approve:disabled,
+.btn-confirm-reject:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .request-card {
+  background: var(--card-bg, #2a2a2a);
+  border-color: var(--border-color, #444);
+}
+
+[data-theme="dark"] .modal-content {
+  background: var(--card-bg, #2a2a2a);
+}
+
+[data-theme="dark"] .modal-details {
+  background: var(--bg-secondary, #333);
+}
+
+[data-theme="dark"] .form-group textarea {
+  background: var(--input-bg, #333);
+  border-color: var(--border-color, #555);
+}
+

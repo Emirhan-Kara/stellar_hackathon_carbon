@@ -1,0 +1,29 @@
+.footer {
+  background: black;
+  color: var(--color-text-secondary);
+  padding: 3rem 2rem;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.logo-accent {
+  color: var(--color-secondary);
+}
+
+.footer-tagline {
+  font-size: 0.875rem;
+}
+

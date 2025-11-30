@@ -1,0 +1,33 @@
+.marketplace-page {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+.marketplace-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.marketplace-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.marketplace-container p {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+

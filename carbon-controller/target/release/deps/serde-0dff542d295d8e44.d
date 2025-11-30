@@ -1,0 +1,14 @@
+C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\deps\serde-0dff542d295d8e44.d: C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\deps\libserde-0dff542d295d8e44.rlib: C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\deps\libserde-0dff542d295d8e44.rmeta: C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs
+
+C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\emirh\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\emirh\OneDrive\Desktop\Hackathon\carbon-controller\target\release\build\serde-565e6e0cfeb1ccc7\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\emirh\\OneDrive\\Desktop\\Hackathon\\carbon-controller\\target\\release\\build\\serde-565e6e0cfeb1ccc7\\out
